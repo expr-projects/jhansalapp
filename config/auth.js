@@ -31,8 +31,8 @@ module.exports =
     },
 
     'twitterAuth' : {
-        'consumerKey'        : 'UfkfsU4h7j5flFekw8Nl8OxFG',
-        'consumerSecret'     : 'qxtP2Tjkp4ZNxR3C9N3zDqeuY5xUTf2zZmINO2k4oOOYPTJ1dA',
+        'consumerKey'        : '6Dycc2GtIHP9vUlmBAxJ2ADAh',
+        'consumerSecret'     : '5X4AGjmeOUt1CYLXNM1wltyju1ZMWuJ4hLdxBlqI0cmCcqIcR6',
         'callbackURL'        : 'https://jhansal.herokuapp.com/auth/twitter/callback'
     },
 
