@@ -13,7 +13,7 @@ module.exports = function(app, passport) {
 
     // show the home page (will also have our login links)
     app.get('/', function(req, res) {
-        res.render('index.ejs');
+        res.render('google.ejs');
     });
     app.use('/users',isLoggedIn,users);
     app.use('/post',isLoggedIn,post);
