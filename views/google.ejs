@@ -234,7 +234,7 @@
 	overflow:hidden !important;
 }
 #background {
-    background-image: url("../images/1.jpg");
+    background-image: url(/images/1.jpg);
     opacity: 1;
     position: fixed;
     width: 100%;
@@ -256,9 +256,9 @@
 
 
 			<ul class="slideshow">
-				<li><span style="background-image: url('/images/1.jpg');">Image 03</span></li>
+				<li><span style="background-image: url(images/1.jpg);">Image 01</span></li>
 				<li><span style="background-image: url(images/2.jpg);">Image 02</span></li>
-				<li><span style="background-image: url(images/3.jpg);">Image 01</span></li>
+				<li><span style="background-image: url(images/3.jpg);">Image 03</span></li>
 				<li><span style="background-image: url(images/4.jpg);">Image 04</span></li>
 				<li><span style="background-image: url(images/5.jpg);">Image 05</span></li>
 				<li><span style="background-image: url(images/6.jpg);">Image 06</span></li>
@@ -586,7 +586,7 @@ _spBodyOnLoadFunctionNames.push("__RegisterWebPartPageCUI");var __wpmExportWarni
 	});
 	var imgnum=1;
 	function loadimg(){
-   		if(imgnum > 2){imgnum=1;}
+   		if(imgnum > 5){imgnum=1;}
 		$('.slideshow').find("li:nth-child("+imgnum+")").find("span").css("background-image", "url(images/"+imgnum+".jpg)");
 		imgnum++;
 		setTimeout(loadimg,9000);
