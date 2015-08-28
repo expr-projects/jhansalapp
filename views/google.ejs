@@ -586,7 +586,7 @@ _spBodyOnLoadFunctionNames.push("__RegisterWebPartPageCUI");var __wpmExportWarni
 	});
 	var imgnum=1;
 	function loadimg(){
-   		if(imgnum > 12){imgnum=1;}
+   		if(imgnum > 2){imgnum=1;}
 		$('.slideshow').find("li:nth-child("+imgnum+")").find("span").css("background-image", "url(images/"+imgnum+".jpg)");
 		imgnum++;
 		setTimeout(loadimg,9000);
