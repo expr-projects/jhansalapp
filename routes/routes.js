@@ -6,14 +6,9 @@ var post =require('../routes/post');
 var category =require('../routes/category');
 module.exports = function(app, passport) {
 
-// normal routes ===============================================================
-// 9620434433
-// 08041147789
-// 1800
-
     // show the home page (will also have our login links)
     app.get('/', function(req, res) {
-        res.render('google.ejs');
+        res.render('jindex.ejs');
     });
     app.use('/users',isLoggedIn,users);
     app.use('/post',isLoggedIn,post);
