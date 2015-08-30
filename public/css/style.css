@@ -201,7 +201,8 @@ h1{font-size:170%;color:#FFF;}
 h2{font-size:150%;color:#FFF;}
 h3{font-size:130%;color:#FFF;}
 h4{font-size:110%;color:#FFF;}
-.container{position:relative;}
+.container{position:relative;align-items: center;padding-top: 25%}
+
 .innerpage_container{position:relative;}
 .section{float:left;position:relative;width:100%;height:24%;cursor:default;overflow-y:scroll;}
 table.ms-rteTable-TableDesign{-ms-name:"Table Design";margin:1%;width:98%;}
@@ -220,62 +221,62 @@ table.ms-rteTable-TableDesign{-ms-name:"Table Design";margin:1%;width:98%;}
 
 @-webkit-keyframes imageAnimation{0%{opacity:0.4;-webkit-animation-timing-function:ease-in;}
 8%{opacity:1;-webkit-animation-timing-function:ease-out;}
-30%{opacity:1;}
-60%{opacity:0;}
+50%{opacity:1;}
+90%{opacity:0;}
 100%{opacity:0}
 }
 @-moz-keyframes imageAnimation{0%{opacity:0;-moz-animation-timing-function:ease-in;}
 8%{opacity:1;-moz-animation-timing-function:ease-out;}
-30%{opacity:1}
-60%{opacity:0}
+50%{opacity:1}
+90%{opacity:0}
 100%{opacity:0}
 }
 @-o-keyframes imageAnimation{0%{opacity:0;-o-animation-timing-function:ease-in;}
 8%{opacity:1;-o-animation-timing-function:ease-out;}
-30%{opacity:1}
-60%{opacity:0}
+50%{opacity:1}
+90%{opacity:0}
 100%{opacity:0}
 }
 @-ms-keyframes imageAnimation{0%{opacity:0;-ms-animation-timing-function:ease-in;}
 8%{opacity:1;-ms-animation-timing-function:ease-out;}
-30%{opacity:1}
-60%{opacity:0}
+50%{opacity:1}
+90%{opacity:0}
 100%{opacity:0}
 }
 @keyframes imageAnimation{0%{opacity:0;animation-timing-function:ease-in;}
 8%{opacity:1;animation-timing-function:ease-out;}
-30%{opacity:1}
-60%{opacity:0}
+50%{opacity:1}
+90%{opacity:0}
 100%{opacity:0}
 }
 @-webkit-keyframes titleAnimation{0%{opacity:0}
 8%{opacity:1;-webkit-animation-timing-function:ease-out;}
-30%{opacity:1;}
-60%{opacity:0;}
+50%{opacity:1;}
+90%{opacity:0;}
 100%{opacity:0}
 }
 @-moz-keyframes titleAnimation{0%{opacity:0}
 8%{opacity:1}
-30%{opacity:1}
-60%{opacity:0}
+50%{opacity:1}
+90%{opacity:0}
 100%{opacity:0}
 }
 @-o-keyframes titleAnimation{0%{opacity:0}
 8%{opacity:1}
-30%{opacity:1}
-60%{opacity:0}
+50%{opacity:1}
+90%{opacity:0}
 100%{opacity:0}
 }
 @-ms-keyframes titleAnimation{0%{opacity:0}
 8%{opacity:1}
-30%{opacity:1}
-60%{opacity:0}
+50%{opacity:1}
+90%{opacity:0}
 100%{opacity:0}
 }
 @keyframes titleAnimation{0%{opacity:0}
 8%{opacity:1;-webkit-animation-timing-function:ease-out;}
-30%{opacity:1;}
-60%{opacity:0;}
+50%{opacity:1;}
+90%{opacity:0;}
 100%{opacity:0}
 }
 .no-cssanimations .slideshow li span{opacity:1;}
