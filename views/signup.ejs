@@ -1,44 +1,106 @@
-<!doctype html>
-<html>
-<head>
-    <title>SignUp</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!DOCTYPE html>
+
+<html data-theme="poonia" class=" win chrome chrome45 webkit"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>  Jobs – poonia</title>
+	<meta charset="UTF-8">
+	<meta name="twitter:site" content="@poonia">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/corp.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="css/my.css">
+<body id="jobs" class="nav-pin">
+	<div id="head-wrap">
+		<header class="grad" id="mast">
 
-</head>
-<body style="background-color:#03a9f4">
-  <div>
-          <div style="width:100% ;height:5%; background-color:#0288d1; padding-left:1%;padding-top:.5%">
-            <p ><a href="/"> <img src="images/jhansal.png" alt="Smiley face" width="10%" height="10%"/></a><p>
-          </div>
-          <div class="container" style="height:40%;width:30%; align-items: center; padding-top:7%">
+			<h1 id="mast-title" style="opacity: 0; transform: translateY(-480px);">Join our team. <em>Inspire us, and get inspired. Help us make.....</em></h1>
+			<nav class="mast" id="mast-btns" style="opacity: 0; transform: translateY(-480px);">
+				<ul>
+					<li><a class="btn btn-positions">Login</a></li>
+				</ul>
+			</nav>
+				<div id="mast-img" style="opacity: 0; transform: translateY(-80px);">
+				<div id="mast-img-bin" style="opacity: 1; background-image: url(../images/3.jpg);"></div>
+			</div>
+		</header>
 
-    <h1 style="color:#fff"><span class="fa fa-sign-in"></span> Signup</h1>
+		<div id="nav-container" style="opacity: 0; transform: translateY(-86px);">
+			<div class="col outer">
+				<a id="logo" href="">Poonia</a>
+				<nav class="mast" id="header-nav">
+					<ul>
+						<li><a href="http://rohtashpoonia.blogspot.in/">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+<div id="page" style="padding-top: 73px;">
 
-    <% if (message.length > 0) { %>
-        <div class="alert alert-danger"><%= message %></div>
-    <% } %>
+	<nav id="main-nav">
+	<div class="col outer clr">
+		<a id="pin-logo" href="" style="opacity: 1;">Poonia</a>
+		<ul>
+			<li class="current"><a href="/signup">SignUp</a></li>
+			<li ><a href="/login">Login</a></li>
+			<li><a href="/jhansal">Jhansal</a></li>
+			<li ><a href="/auth/google">google Login</a></li>
+			<li ><a href="/auth/twitter">Twitter Login</a></li>
 
-    <!-- LOGIN FORM -->
-    <form action="/signup" method="post">
-        <div class="form-group" style="color:#fff">
-            <label>Email</label>
-            <input type="text" class="form-control" name="email">
-        </div>
-        <div class="form-group" style="color:#fff">
-            <label>Password</label>
-            <input type="password" class="form-control" name="password">
-        </div>
+		</ul>
 
-        <button type="submit" class="btn btn-default"><span class="fa fa-user"></span>Signup</button>
+		<a id="mobile-nav-handle">YO</a>
+	</div>
+	<div id="main-nav-shadow" style="opacity: 1;"></div>
+</nav>
+	<main class="no-pad" style="height:900px">
+
+		<section class="page-group mobile-flex">
+			<div class="col inner">
 
 
-    </form>
-      <p >Already have an account? <a href="/login">Login</a></p>
+				<div class="flex-left">
+					<div id="job-listings">
+
+
+						<h2>SignUp</h2>
+                        <div class="job-group">
+													<form action="/signup" method="post">
+							                <div class="rkp-group" style="color:#fff">
+							                    <label class="rkp-label" >Email</label>
+							                    <input type="text" class="rkp-input" name="email">
+							                </div>
+							                <div class="rkp-group" style="color:#fff">
+							                    <label class="rkp-label" >Password</label>
+							                    <input type="password" class="rkp-input" name="password">
+							                </div>
+
+							                <button type="submit" class="btn btn-default"><span class="fa fa-user"></span>SignUp</button>
+
+												  </form>
+                        </div>
+												<% if (message.length > 0) { %>
+														<div class="alert alert-danger"><%= message %></div>
+												<% } %>
+
+				</div>
+			</div>
+		</div></section>
+
+	</main>
 
 </div>
-</div>
-</body>
-</html>
+
+
+	<!-- jQuery -->
+<script type="text/javascript" src="js/corp.js"></script>
+<script>
+	if (typeof jQuery == 'undefined')
+		document.write(unescape(""));
+</script>
+
+
+
+
+</body></html>

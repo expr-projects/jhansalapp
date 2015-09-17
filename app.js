@@ -12,7 +12,8 @@ var express = require('express')
     ,errorHandler = require('errorhandler')
     ,path = require('path')
     ,passport = require('passport')
-    ,flash = require('connect-flash');
+    ,flash = require('connect-flash')
+    ,io = require('socket.io')(http);
 //****************************routes**************************************
 
 
@@ -26,6 +27,12 @@ mongoose.connect(configDB.url, function (err, res) {
   } else {
     console.log ('Succeeded connected to: ' + configDB.url);
   }
+});
+
+io.on('connection', function(socket){
+  socket.on('chat message', function(msg){
+    io.emit('chat message', msg);
+  });
 });
 /*****************************app configuration*************************************/
 require('./config/passport')(passport);

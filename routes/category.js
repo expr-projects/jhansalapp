@@ -6,11 +6,9 @@ var a={};
 a = Category.find().exec(function(req ,rep,next){});
 
 router.get('/', function(request, response) {
-  response.render('google.ejs');
-  // response.setHeader('Content-Type', 'application/json');
-  //
-  //
-  //     response.send(JSON.stringify(a));
+
+  response.setHeader('Content-Type', 'application/json');
+      response.send(JSON.stringify(a));
   });
 
 module.exports = router;

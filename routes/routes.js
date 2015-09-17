@@ -4,16 +4,27 @@ var router = express.Router();
 var users = require('../routes/users');
 var post =require('../routes/post');
 var category =require('../routes/category');
+var jhansal = require('../routes/jhansal');
+var about = require('../routes/about');
+var news = require('../routes/news');
+var temples = require('../routes/temples');
+var education = require('../routes/education');
+var contact = require('../routes/contact');
 module.exports = function(app, passport) {
 
     // show the home page (will also have our login links)
     app.get('/', function(req, res) {
-        res.render('jindex.ejs');
+        res.render('jhansal.ejs');
     });
     app.use('/users',isLoggedIn,users);
     app.use('/post',isLoggedIn,post);
     app.use('/category',isLoggedIn,category);
-
+    app.use('/jhansal',jhansal);
+    app.use('/about',about);
+    app.use('/temples',temples);
+    app.use('/education',education);
+    app.use('/news',news);
+    app.use('/contact',contact);
     // PROFILE SECTION =========================
     app.get('/profile', isLoggedIn, function(req, res) {
         res.render('profile.ejs', {

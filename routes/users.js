@@ -9,8 +9,7 @@ a = User.find().exec(function(req ,rep,next){});
 
 router.get('/', function(request, response) {
 
-
-  response.render('google.ejs');
+   response.render('myprofile0.ejs');
   // response.setHeader('Content-Type', 'application/json');
   //
   //

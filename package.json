@@ -31,7 +31,8 @@
     "connect-flash": "latest",
     "bcrypt-nodejs" : "latest",
     "bower" :"latest",
-    "bootstrap" :"latest"
+    "bootstrap" :"latest",
+    "socket.io":"latest"
 
 
   },
