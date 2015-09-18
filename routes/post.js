@@ -6,7 +6,7 @@ var a={};
 a = Posts.find().exec(function(req ,rep,next){});
 
 router.get('/', function(request, response) {
-  response.render('home.ejs');
+  response.render('abcd.ejs');
   // response.setHeader('Content-Type', 'application/json');
   //     response.send(JSON.stringify(a));
   });

@@ -17,7 +17,7 @@ module.exports = function(app, passport) {
         res.render('jhansal.ejs');
     });
     app.use('/users',isLoggedIn,users);
-    app.use('/post',isLoggedIn,post);
+    app.use('/post',post);
     app.use('/category',isLoggedIn,category);
     app.use('/jhansal',jhansal);
     app.use('/about',about);
