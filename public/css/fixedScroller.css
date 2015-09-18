@@ -1,0 +1,41 @@
+.copy-one {position: absolute; top: 300px; }
+
+.fixedSection { 
+    position:fixed !important; 
+    top:0 !important; 
+    padding:120px 0px 0px 0px !important; 
+    margin-left:1%!important;
+    width:98% !important;
+}
+
+.small-height { max-height:500px; overflow:hidden; }
+.big-height { height:1000px !important; }
+.pushBottom { bottom:-693px !important; }
+.fix-margin { margin-left:0!important; }
+
+.push-top { margin-top:80px !important; }
+
+.hide-overflow { overflow:hidden; }
+
+.chunck-one { display:block; }
+.chunck-two { display:none; }
+.chunck-three { display:none; }
+.copy-height { height:1144px; }
+
+.display-block { display:block !important; }
+.display-none { display:none !important; }
+
+.front { z-index:199; }
+
+.gallery-chrome .chrome-frame { background:transparent url(http://www.saavn.com/corporate/wp-content/themes/saavn/_i/corp-chromes-new.png) 0 0 no-repeat; }
+.gallery-chrome.iphone.large .chrome-frame img { margin:88px 0 0 19px!important; }
+
+.gallery-chrome .chrome-frame { max-height:878px !important; }
+
+.light-back { background:#f6f6f6; }
+
+/* phone */
+
+@media screen and (max-width: 560px) {
+    .copy-height { height:auto; }
+}

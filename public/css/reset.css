@@ -1,0 +1,38 @@
+/* Reset */
+a, abbr, article, aside, blockquote, body, code, dd, del, details, div, dl, dt, em, fieldset, figcaption, figure, footer, form, header, hgroup, html, h1, h2, h3, h4, h5, h6, iframe, label, li, menu, nav, object, ol, p, section, span, strong, table, tbody, td, tfoot, th, thead, tr, ul {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body { line-height: 1; }
+img {
+	border: none;
+	display: block;
+	margin: 0;
+}
+ol, ul { list-style: none; }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a, :focus { outline: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+
+/* HTML5 Display Set */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* Convenience */
+.hide, hr, legend { display: none; }
+.clear { clear: both; }
+.clr:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0; 
+	visibility: hidden;
+}
+
