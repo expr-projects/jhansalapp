@@ -10,6 +10,7 @@ var news = require('../routes/news');
 var temples = require('../routes/temples');
 var education = require('../routes/education');
 var contact = require('../routes/contact');
+var product = require('../routes/product');
 module.exports = function(app, passport) {
 
     // show the home page (will also have our login links)
@@ -21,6 +22,7 @@ module.exports = function(app, passport) {
     app.use('/category',isLoggedIn,category);
     app.use('/jhansal',jhansal);
     app.use('/about',about);
+    app.use('/product',product);
     app.use('/temples',temples);
     app.use('/education',education);
     app.use('/news',news);
