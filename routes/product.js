@@ -4,7 +4,7 @@ var Product = require('../models/dbmodel').Product;
 
 router.get('/', function(request, response) {
 
-    response.render('product.ejs');
+    response.render('product.ejs',{message : ''});
 });
 router.get('/data', function(request, response) {
 
